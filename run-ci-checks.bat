@@ -31,7 +31,7 @@ if %ERRORLEVEL% NEQ 0 (
 
 echo.
 echo [4/4] Running tests...
-call npm test -- --passWithNoTests
+call npm run test:ci
 if %ERRORLEVEL% NEQ 0 (
     echo ERROR: Tests failed!
     exit /b 1
